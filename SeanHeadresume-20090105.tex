@@ -1,0 +1,152 @@
+\documentclass{article}
+
+
+
+\usepackage{setspace}
+\usepackage[letterpaper]{geometry}
+\setstretch{0.7}
+\pagestyle{empty}
+\geometry{verbose,tmargin=0.3in,bmargin=0.10in,lmargin=0.4in,rmargin=0.4in,headheight=0in,headsep=0in,footskip=0.3in}
+
+% #1: Company #2: Date range #3: title #4:  Description
+\newcommand{\work}[4]{
+#3\\*
+\indent\indent\small\makebox[2.20in][l]{#1} #2\footnotesize\\[.75em]
+\makebox[0.15in][l]{}
+\begin{minipage}[t]{7.00in}\footnotesize\itemsep0pt{#4}\end{minipage}
+\\
+\\
+\normalsize
+}
+
+
+% #1: Company #2: Date range #3: title #4:  Description
+\newcommand{\workold}[4]{
+#3\\*
+\indent\indent\small\makebox[2.20in][l]{#1} #2\footnotesize\\[.75em]
+
+\normalsize
+}
+
+\newcommand{\skills}[1]{
+\heading{Skills}
+\makebox[0.25in][l]{}
+\begin{minipage}[t]{7.00in}\small{#1}\end{minipage}
+\\
+}
+
+\newcommand{\heading}[1]{
+\noindent\textbf{#1}
+\\
+}
+
+\newcommand{\address}[1]{
+\hfill{}\begin{minipage}[t]{2.00in}#1\end{minipage}
+\\
+}
+
+\newcommand{\Objective}[1]{
+\noindent\textbf{Objective}\\
+ \indent\small #1\normalsize
+\\
+}
+
+
+\begin{document}
+\address{\textbf{Sean Head}\\
+ 408.372.7263\\
+ headsean@gmail.com}
+
+\Objective{I am searching for a technical position in systems
+engineering that will give me the opportunity to practice and
+expand my knowledge base and skill set. Positions within this scope
+that are outside my specific experience particularly interest me as
+they would allow me to learn new skills and concepts. }
+
+\heading{Work Experience}
+
+\work{Corona Labs Inc}{2008--2015, 2015-present}{Senior Systems Engineer, Director of Engineering}{
+    \begin{itemize} \itemsep0em
+        \item Guided Engineering team through acquisition by Perk.com.
+        \item Worked with Product Design and Developer Relations teams to plan
+        and set engineering pace and goals.
+        \item Acted as technical liaison between Engineering and expanded international
+        QA/support.
+        \item Architected transition for back-end API's from a monolithic XML-RPC
+        system to REST-based microservices (Laravel/Docker on AWS).
+        \item Served as sole Systems Administrator for all internal and public facing
+        services.
+        \item Designed, implemented, and maintained application build queuing system
+        (patent pending).
+        \item Developed testing infrastructure for mobile applications in conjunction
+        with a continuous integration system (Jenkins).
+        \item Designed, implemented, and maintained a high volume mobile analytics system. Used Hadoop and HBase for data storage and analysis.
+        \item Maintained internal application build cluster running on OS X, Windows 7, and Ubuntu Linux.
+        \item Served as primary internal developer support for non core product issues (scripting, networking SME).
+    \end{itemize}\itemsep1em
+}
+
+\work{Head Networks}{2006--2008}{Network Consultant/Owner}{
+    \begin{itemize}\itemsep0em
+        \item Designed and managed a multi-building campus-wide LAN including support
+        servers (Windows 2003, Linux, VMware).
+        \item Maintained a wide range of network switches and other devices from multiple vendors (Cisco, HP, Netgear, PFsense).
+    \end{itemize}
+}
+
+\work{Pacific Custom Installations}{2004--2006}{Partner}{
+    \begin{itemize}\itemsep0em
+        \item Owned and operated Pacific Custom Installations, a high-end Audio/Video installation and customization contractor.
+        \item Organized job site time tables and worked as a project manager with clients and general contractors.
+        \item Worked with my partner designing, integrating, and automating Audio/Video systems integration.
+\end{itemize}
+}
+
+\work{Terracom (ISP); Kigali, Rwanda}{2004}{Network/Telecommunications Consultant}{
+    \begin{itemize}\itemsep0em
+        \item Researched, planned and supervised the installation of the company's
+        first passive optical network run. Including interfacing with government
+        liaisons to plan fiber routes and initial deployment sites.
+        \item Planned and configured caching web proxy system optimized for satellite
+        latency.
+        \item Taught a class for the NOC Team on network design and
+        capacity planning. Used curriculum of my own design.
+    \end{itemize}
+}
+
+\work{Digital Putty (ISP)}{2003--2004}{Wireless Network Engineer}{
+    \begin{itemize}\itemsep0em
+        \item Led projects to deploy additional tower locations, increasing
+        the service area to 12 locations. With several wireless links stretching
+        20mi.
+        \item Assisted in deploying traffic analysis software and interpreting the generated statistics (ntop and Cacti).
+    \end{itemize}
+}
+
+\workold{Cyber Manor}{2002--2003}{Information Technology Administrator}{
+
+}
+
+\workold{Real-Wireless (ISP)}{2001--2003}{Information Technology Administrator}{
+
+}
+
+\workold{Physicianaccess.com}{1998--2002}{Network Administrator}{
+
+}
+
+\skills{
+    \begin{itemize}\itemsep0em\footnotesize
+        \item Windows and OS X desktop/server support
+        \item Networking protocols (TCP, UDP, NTP, CIFS, NFS, HTTP, etc)
+        \item Linux server support (Debian, Ubuntu, Puppet, Apache)
+        \item Experienced in x86 hardware; including but not limited to system debugging,
+        RAID subsystems, I/O planning
+        \item Scripting languages: PHP, Lua, Bash, Puppet's Ruby DSL, Windows batch files
+        \item Experience with storage networking (iSCSI, NFS, Fibre Channel)
+        \item Experienced in wireless networking, in both a WAN and LAN setting
+        \item Ethernet switching/LAN planning and configuration
+        \item Cable installation; Ethernet, A/V, telecom, Single and Multi-mode fiber
+    \end{itemize}
+}
+\end{document}
